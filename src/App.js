@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {Container, Form, Button, Navbar} from "react-bootstrap";
 import CreatableSelect from 'react-select/creatable';
+import getUrl from './GetUrl.js';
 import './App.css';
 
 function App() {
+
   return (
     <Container className="App" >
       <Navbar className="my-nav"> 
@@ -14,7 +16,7 @@ function App() {
         <Form.Group>
           <Form.Label>Title</Form.Label>
           <Form.Control name="title" placeholder="Enter Title"/>
-          <Form.Control.Feedback type="invalid">Error in Title</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid" />
         </Form.Group>
 
         <Form.Group>
@@ -24,8 +26,8 @@ function App() {
 
         <Form.Group>
           <Form.Label>Link</Form.Label>
-          <Form.Control name="url"  type="url" placeholder="Enter URL" />
-          <Form.Control.Feedback type="invalid">Error in URL</Form.Control.Feedback>
+          <Form.Control name="url"  type="url" value={ window.location.href } /> 
+          <Form.Control.Feedback type="invalid" />
         </Form.Group>
 
         <Form.Group>
@@ -34,7 +36,7 @@ function App() {
               name="category"
           />
           <Form.Control hidden />
-          <Form.Control.Feedback type="invalid">Error in Category</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid" />
         </Form.Group>
 
         <Button className="rounded-pill" type = "primary">Save Post</Button>
