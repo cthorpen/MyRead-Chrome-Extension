@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background: linear-gradient(#437eb6, #fff);
   min-width: 600px;
   max-width: 800px;
   min-height: 600px;
@@ -18,14 +18,12 @@
 }
 
 .App-header {
-  background-color: #437eb6;
-  min-height: 100vh;
+  height: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 32px;
 }
 
 .App-link {
@@ -37,25 +35,23 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(45deg);
   }
-}
-
-.h2 {
-  font-family: 'Josefin Sans', 'sans-serif';
-  margin-top: 0.5rem;
 }
 
 .my-nav {
   background-color: #437eb6;
-  height: 25%;
+  height: 100px;
   color: #fff;
   text-decoration: none;
+  font-size: 32pt;
+  font-family: 'Josefin Sans', 'sans-serif';
+  justify-content: center;
+  padding-top: 0%;
 }
 
-.my-brand {
-  font-family: 'Yeseva One', cursive;
-  font-size: 2rem;
-  margin-left: 1rem;
-  color: white !important;
+/* .my-forms {
 }
+
+.form-groups {
+} */

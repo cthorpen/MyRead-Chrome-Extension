@@ -8,11 +8,11 @@ function App() {
 
   return (
     <Container className="App" >
-      <Navbar className="my-nav"> 
-        <h2>Create a New Post</h2>
+      <Navbar className="App-header"> 
+        <h1>MyRead - New Post</h1>
       </Navbar>
       
-      <Form className="h2">
+      <Form>
         <Form.Group>
           <Form.Label>Title</Form.Label>
           <Form.Control name="title" placeholder="Enter Title"/>
