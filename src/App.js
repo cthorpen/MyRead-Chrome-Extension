@@ -8,15 +8,20 @@ function App() {
 
   return (
     <Container className="App" >
+       
       <Navbar className="App-header"> 
-        <h1>MyRead - New Post</h1>
+          <img src="./wave.png" />
+          <h1>MyRead</h1>
       </Navbar>
       
-      <Form>
+      <div>
+        <h2>Curate a new post - while you're browsing!</h2>
+      </div>
+
+      <Form className="all-forms">
         <Form.Group>
           <Form.Label>Title</Form.Label>
           <Form.Control name="title" placeholder="Enter Title"/>
-          <Form.Control.Feedback type="invalid" />
         </Form.Group>
 
         <Form.Group>
@@ -26,8 +31,7 @@ function App() {
 
         <Form.Group>
           <Form.Label>Link</Form.Label>
-          <Form.Control name="url"  type="url" value={ window.location.href } /> 
-          <Form.Control.Feedback type="invalid" />
+          <Form.Control name="url"  type="url" placeholder="URL goes here" /> 
         </Form.Group>
 
         <Form.Group>
@@ -36,7 +40,6 @@ function App() {
               name="category"
           />
           <Form.Control hidden />
-          <Form.Control.Feedback type="invalid" />
         </Form.Group>
 
         <Button className="rounded-pill" type = "primary">Save Post</Button>
