@@ -1,3 +1,7 @@
+# How to Run as a Chrome Extension
+
+download, run 'npm run build', add build folder to chrome extension (dev) site
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
