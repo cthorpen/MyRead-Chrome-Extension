@@ -11,7 +11,7 @@ function App() {
        
       <Navbar className="App-header"> 
           <img src="./wave.png" />
-          <h1>MyRead</h1>
+          <h1>MyRead Curated Blog</h1>
       </Navbar>
       
       <h2>Curate a new post - while you're browsing!</h2>
